@@ -1,17 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
 
 
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 
-</head>
-<body>
 
-<p>Hello world!</p>
-  
+
+
+    <meta charset="utf-8" />
+    <title>Random Cow Facts</title>
+    <meta
+      name="description"
+      content="Get a random fact about cows."
+    />
+    <meta name="author" content="gocygo" />
+    <style>
+      body {
+        margin: 15px auto;
+        max-width: 650px;
+        line-height: 1.2;
+        font-family: sans-serif;
+        font-size: 2em;
+        color: #fff;
+        background: #444;
+      }
+    </style>
+  </head>
+  <body onload="main()">
+    <h1>Random Planet Facts</h1>
+    <p id="output_p"></p>
+    <script>
+      function main() {
+        const facts = [
+          'A cattle or cow is a large domesticated cloven-hooved herbivore.',
+          'Cow is the term for females, while bull is for males.',
+          'The term “cow” is generally used as singular for the collective cattle.',
+          'The term “cow” is generally used as singular for the collective cattle.',
+          'For undetermined gender, we use the word cow in singular form, such as, “there is a cow in the street.”',
+          'Cattle are a prominent modern member of the subfamily Bovinae (a diverse group of 10 genera of medium to large-sized ungulates such as bison, water buffalo, and African buffalo).',
+          'They became one of the most common livestock primarily for their meat and milk.',
+          'Their hides or skin is perfect for producing good quality leather.',
+          'They can be trained as riding animals, draft animals, or even working animals.',
+          'People now use the cow’s dung (cow pats, cow pies, or cow manure) as biogas and organic fertilizer.',
+          'They are the most common species of the genus Bos (wild and domestic cattle), and are classified collectively as Bos taurus.',
+          'Cattle were originally identified as three separate species. Bos taurus, Bos indicus, and the extinct Bos primigenius.',
+          'Castration is a common management system in the cattle industry. It reduces the aggression of the bulls, which enhances farm safety for handlers and other animals.',
+          'In the United States, “steer” is a term for the castrated male.',
+          "“Heifer” is the term for a young female cow that has not borne a calf.",
+          'In some places such as India, a cow has important religious significance.',
+          'Small cow breeds, such as the Miniature Zebu, are also kept as pets.',
+          '“Beef cattle” is the term for the animals that’s for human consumption.',
+          'They are large quadrupedal ungulate mammals with cloven hooves.',
+          'Based on the estimation of  The Food and Agriculture Organization, there are approximately 1.5 billion cattle in the world.',
+        
+        ]
+        document.querySelector('#output_p').innerHTML =
+          facts[Math.floor(Math.random() * facts.length)]
+      }
+    </script>
   </body>
-  </html?
+</html>
